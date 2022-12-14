@@ -1,4 +1,4 @@
-baseURL      = "https://www.example.com/"
+baseURL      = "https://hackersbyrez0.com/"
 title        = "Gallery Deluxe"
 disableKinds = ["section", "taxonomy", "term"]
 
@@ -8,7 +8,7 @@ disableKinds = ["section", "taxonomy", "term"]
 
     [params.gallerydeluxe]
         # Shuffle the images in the gallery to give the impression of a new gallery each page load.
-        shuffle = false
+        shuffle = true
 
         # Reverse the order of the images in the gallery.
         reverse = true
@@ -51,4 +51,4 @@ disableKinds = ["section", "taxonomy", "term"]
         source = "static"
         target = "static"
     [[module.imports]]
-        path = "github.com/bep/gallerydeluxe"
+        path = "github.com/jthack/hackersbyrez0"
