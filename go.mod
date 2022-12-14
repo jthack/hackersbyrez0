@@ -1,4 +1,4 @@
-module github.com/bep/gallerydeluxe_starter
+module github.com/jthack/hackersbyrez0
 
 go 1.19
 
