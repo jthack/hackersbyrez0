@@ -1,0 +1,21 @@
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 0px;
+    background-color: #000; /* This sets the background color to black */
+
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%; /* This makes it square */
+}
+
+.image-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This line will ensure the images cover the square */
+}
+
