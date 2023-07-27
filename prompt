@@ -1,0 +1,16 @@
+there's an issue with this code and i cant tell why. there are 349 images in the folder currently named image1.png to image349.png. when this code runs, it starts at 100 for some reason
+
+def move_and_rename_images(folder_path):
+    files = os.listdir(image_dir)
+    existing_images = [f for f in files if f.endswith('.png')]
+    next_num = int(sorted(existing_images)[-1].split('image')[-1].split('.png')[0]) + 1 if existing_images else 1
+
+    for filename in os.listdir(folder_path):
+        if filename.endswith('.png'):
+            new_filename = f'image{next_num}.png'
+            print(new_filename)
+            os.rename(os.path.join(folder_path, filename), os.path.join(image_dir, new_filename))
+
+            img = imageio.imread(os.path.join(image_dir, new_filename))
+            create_thumbnails(img, new_filename)
+            next_num += 1
