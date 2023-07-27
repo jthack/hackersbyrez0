@@ -4,7 +4,7 @@ $(document).ready(function() {
     let allImages = [];  // Array to store all the image paths
 
     // Generate the array with all the image paths
-    for (let i = 1; i <= 199; i++) {  // Assume you have 50 images
+    for (let i = 1; i <= 299; i++) {  // Assume you have 50 images
         let thumbnail = '/images/thumbnails/image' + i + '.png';
         let src = '/images/image' + i + '.png';
         allImages.push({thumbnail: thumbnail, src: src});
