@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    let imageCount = 100;  // Initial number of images to display
+    let imageCount = 2000;  // Initial number of images to display
     let loadIncrement = 20;  // Number of images to load each time we reach the bottom
     let allImages = [];  // Array to store all the image paths
 
     // Generate the array with all the image paths
-    for (let i = 1; i <= 299; i++) {  // Assume you have 50 images
+    for (let i = 1; i <= imageCount; i++) {
         let thumbnail = '/images/thumbnails/image' + i + '.png';
         let src = '/images/image' + i + '.png';
         allImages.push({thumbnail: thumbnail, src: src});
